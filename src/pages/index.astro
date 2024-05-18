@@ -1,0 +1,64 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../layouts/Layout.astro';
+import tims from '../images/tims-01.jpg'
+import tims02 from '../images/tims-06.jpg'
+import aurora from '../images/aurora.jpg'
+import shopify from '../images/shopify.jpg'
+import mars from '../images/mars-poster.jpg'
+import logo from '../images/jsdesigns-logo-onecolor-reverse.svg'
+---
+
+<Layout title="JS Designs">
+	<Image  loading="eager" src={logo} alt="Aurora" class="logo" title="JS Designs - your brand in good hands"></Image>
+	<div class="main">
+		<h1>Acrylic Sign</h1>
+		<p>Single or multi layer logos</p>
+		<Image loading="eager" src={shopify} alt="Aurora" class="renders 2cols"></Image>
+		<Image loading="eager" src={tims02} alt="Aurora" class="renders"></Image>
+		<Image loading="lazy" src={tims} alt="Tims" class="renders"></Image>
+		<Image loading="lazy" src={aurora} alt="Aurora" class="renders"></Image>
+	</div>
+	<div class="main">
+		<h1>Posters</h1>
+		<p>Various finishes</p>
+		<Image src={mars} alt="Mars Poster" class="renders"></Image>
+	</div>
+</Layout>
+
+<style>
+	.renders{
+		width:100%;
+		height:auto;
+	}
+	.logo{
+		margin:auto;
+		display:block;
+		width: 100px;
+		height:auto;
+	}
+	.main {
+		margin: auto;
+		padding: 1rem;
+		/* width: 800px;
+		max-width: calc(100% - 2rem); */
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+		display:grid;
+		grid-template-columns: 1fr;
+		gap:5px;
+		/* @media screen and (min-width: 600px) {
+			grid-template-columns: 1fr 1fr;
+
+		} */
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+
+</style>
