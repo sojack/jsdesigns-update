@@ -6,23 +6,19 @@ import tims02 from '../images/tims-06.jpg'
 import aurora from '../images/aurora.jpg'
 import shopify from '../images/shopify.jpg'
 import mars from '../images/mars-poster.jpg'
+import corinthians from '../images/corinthians.jpg'
 import logo from '../images/jsdesigns-logo-onecolor-reverse.svg'
 ---
 
 <Layout title="JS Designs">
 	<Image  loading="eager" src={logo} alt="Aurora" class="logo" title="JS Designs - your brand in good hands"></Image>
 	<div class="main">
-		<h1>Acrylic Sign</h1>
-		<p>Single or multi layer logos</p>
 		<Image loading="eager" src={shopify} alt="Aurora" class="renders 2cols"></Image>
 		<Image loading="eager" src={tims02} alt="Aurora" class="renders"></Image>
 		<Image loading="lazy" src={tims} alt="Tims" class="renders"></Image>
 		<Image loading="lazy" src={aurora} alt="Aurora" class="renders"></Image>
-	</div>
-	<div class="main">
-		<h1>Posters</h1>
-		<p>Various finishes</p>
-		<Image src={mars} alt="Mars Poster" class="renders"></Image>
+		<Image loading="lazy" src={corinthians} alt="corinthians" class="renders"></Image>
+		<Image loading="lazy" src={mars} alt="Mars Poster" class="renders"></Image>
 	</div>
 </Layout>
 
